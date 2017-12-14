@@ -1,0 +1,33 @@
+.search {
+    height: 1.25rem;
+    font-size: .28rem;
+}
+.search-box {
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control-label {
+    margin: 0;
+}
+.content {
+    display: inline-block;
+    width: 3.4rem;
+    margin-left: .05rem;
+}
+.content>input {
+    font-size: .28rem;
+}
+.ipt-box {
+    margin-bottom: .08rem;
+}
+#get-user,#get-agent {
+    margin-left: .5rem;
+    margin-right: .3rem;
+}
+#user-id,#agent-id {
+    background-color: #d6d6d6;
+    outline: none;
+    height: .6rem;
+}

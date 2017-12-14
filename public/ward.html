@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>奖品管理</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/auto-size.js"></script>
+    <link rel="stylesheet" href="css/global.css"/>
+</head>
+<body>
+<div class="container">
+    <div id="ward-head" class="ward-head trans box row">
+        <div class="col-xs-6">
+            <strong>今日出奖数：</strong>
+            <span>99</span>
+        </div>
+        <div class="col-xs-6">
+            <strong>累计出奖数：</strong>
+            <span>99999</span>
+        </div>
+    </div>
+    <div id="ward-earned" class="ward-earned trans box row">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#today" data-toggle="tab">当日出奖明细</a>
+            </li>
+            <li>
+                <a href="#tomorrow" data-toggle="tab">累计出奖明细</a>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="today">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>奖品名称</th>
+                        <th>出奖数量</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>小黄鸡</td>
+                        <td class="ward-td">5</td>
+                    </tr>
+                    <tr>
+                        <td>小红鸡</td>
+                        <td class="ward-td">10</td>
+                    </tr>
+                    <tr>
+                        <td>小蓝鸡</td>
+                        <td class="ward-td">15</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="tomorrow">
+                <table class="table table-condensed">
+                    <thead>
+                    <tr>
+                        <th>奖品名称</th>
+                        <th>出奖数量</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td class="ward-td">5</td>
+                    </tr>
+                    <tr>
+                        <td>222</td>
+                        <td class="ward-td">10</td>
+                    </tr>
+                    <tr>
+                        <td>333</td>
+                        <td class="ward-td">15</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="ward-detail" class="ward-detail trans box row">
+        <table class="table table-striped">
+            <caption>出奖明细</caption>
+            <thead>
+            <tr>
+                <th>玩家ID</th>
+                <th>奖品名称</th>
+                <th>出奖时间</th>
+                <th>当前状态</th>
+            </tr>
+            </thead>
+            <tbody id="ward-record">
+            <tr>
+                <td>12345</td>
+                <td>小黄鸡</td>
+                <td>2017-11-15</td>
+                <td>未兑换</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>小黄鸡</td>
+                <td>2017-11-15</td>
+                <td>未兑换</td>
+            </tr>
+            <tr>
+                <td>12345</td>
+                <td>小黄鸡</td>
+                <td>2017-11-15</td>
+                <td>未兑换</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="empty"></div>
+    <footer>
+        <ul>
+            <li><a href="index.html"><img src="img/index.png" alt=""/><p>首页</p></a></li>
+            <li class="active-nav"><a href="javascript:;"><img src="img/ward.png" alt=""/><p>奖品管理</p></a></li>
+            <li><a href="profit.html"><img src="img/earn.png" alt=""/><p>营收</p></a></li>
+            <li><a href="user.html"><img src="img/my.png" alt=""/><p>我的</p></a></li>
+        </ul>
+
+    </footer>
+</div>
+
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/tools-gp.js"></script>
+<script src="js/ward.js"></script>
+</body>
+</html>

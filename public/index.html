@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>幸运娃娃机 客户后台</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/auto-size.js"></script>
+    <link rel="stylesheet" href="css/global.css"/>
+</head>
+<body>
+    <div class="container">
+        <div id="index-earn" class="index-earn trans box row">
+            <div class="col-xs-6">
+                <h2>今日收益</h2>
+                <p>￥999</p>
+            </div>
+            <div class="col-xs-6">
+                <h2>累计收益</h2>
+                <p>￥9999</p>
+            </div>
+        </div>
+        <div id="index-data" class="index-data trans box row">
+            <div class="col-xs-6">
+                <strong>总玩家数：</strong>
+                <span>999</span>
+            </div>
+            <div class="col-xs-6">
+                <strong>下级代理数：</strong>
+                <span>99</span>
+            </div>
+            <div class="col-xs-6">
+                <strong>新增玩家数：</strong>
+                <span>99</span>
+            </div>
+            <div class="col-xs-6">
+                <strong>新增代理数：</strong>
+                <span>9</span>
+            </div>
+        </div>
+        <div id="index-nav" class="index-nav trans row">
+            <a class="btn-private" href="myuser.html">我的玩家</a>
+            <a class="btn-private" href="myagent.html">我的代理</a>
+            <a class="btn-private" href="myprofit.html">我的收益</a>
+        </div>
+
+        <div id="index-show" class="index-show trans box row">
+
+            <h1>最近七天收益</h1>
+            <div id="charts" style="height: 4.7rem;width: 100%;"></div>
+        </div>
+
+        <div class="empty"></div>
+        <footer>
+            <ul>
+                <li class="active-nav"><a href="javascript:;"><img src="img/index.png" alt=""/><p>首页</p></a></li>
+                <li><a href="ward.html"><img src="img/ward.png" alt=""/><p>奖品管理</p></a></li>
+                <li><a href="profit.html"><img src="img/earn.png" alt=""/><p>营收</p></a></li>
+                <li><a href="user.html"><img src="img/my.png" alt=""/><p>我的</p></a></li>
+            </ul>
+
+        </footer>
+    </div>
+
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/tools-gp.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

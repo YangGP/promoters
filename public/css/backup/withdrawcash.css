@@ -1,0 +1,52 @@
+.cash {
+    height: 100%;
+}
+.cash-value {
+    font-size: .34rem;
+    color: #ffa600;
+}
+.cash-value label{
+    font-weight: normal;
+}
+.cash-value-first {
+    margin-top: .95rem;
+    text-align: left;
+    padding-left: .9rem;
+}
+.cash-value-first>label{
+    margin-right: 1.4rem;
+}
+.cash-value-first>span{
+    font-size: .4rem;
+    font-weight: bold;
+}
+.cash-value-second {
+    margin-top: 1.6rem;
+    text-align: left;
+    padding-left: .9rem;
+}
+.cash-value-second>label {
+    margin-right: 1rem;
+}
+.cash-value-second>input {
+    width: 3.4rem;
+    height: .55rem;
+    outline: none;
+    border: 1px inset lightgray;
+    border-radius: .15rem;
+    padding-left: .1rem;
+}
+.cash-value>a {
+    margin-top: 1.1rem;
+    margin-bottom: 1rem;
+    margin-left: 4.4rem;
+}
+
+
+.rules {
+    font-size: .32rem;
+    text-align: left;
+    border-top: 1px solid #333;
+    padding: .4rem .25rem;
+    font-weight: bold;
+}

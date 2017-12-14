@@ -1,0 +1,71 @@
+.earn {
+    color: #ffa600;
+}
+.earn>div:first-child {
+    border-right: 1px #c7c7c7 solid;
+}
+.earn h2 {
+    font-size: .28rem;
+    font-weight: normal;
+}
+.earn p {
+    font-size: .34rem;
+}
+
+.data {
+    color: #595757;
+    font-size: .26rem;
+    height: 2.1rem;
+}
+.data>div {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data>div:nth-child(2n-1){
+    border-right: 1px solid #c7c7c7;
+}
+.data>div:nth-child(1){
+    border-bottom: 1px solid #c7c7c7;
+}
+.data>div:nth-child(2){
+    border-bottom: 1px solid #c7c7c7;
+}
+.data strong {
+    font-weight: normal;
+}
+
+.nav {
+    height: .8rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .12rem;
+}
+.nav a{
+    width: 2.4rem;
+    height: .8rem;
+    font-size: .32rem;
+    line-height: .8rem;
+    text-align: center;
+    font-weight: normal;
+}
+.nav a:not(:last-child){
+    margin-right: .13rem;
+}
+
+.show {
+    color: #595757;
+    font-size: .26rem;
+    max-height: 7.2rem;
+    overflow: scroll;
+}
+.show h1 {
+    font-size: .36rem;
+    display: inline-block;
+    width: 100%;
+    background-color: #c7c7c7;
+    height: .6rem;
+    line-height: .6rem;
+}
+

@@ -1,0 +1,291 @@
+$border: '1px solid #c7c7c7'
+
+html,body{
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "microsoft yahei", sans-serif;
+}
+body {
+  background-color: #393939;
+  padding: .15rem .06rem;
+}
+li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.form-control {
+  padding: .06rem .12rem;
+  height: .5rem;
+}
+.table {
+  margin: 0;
+}
+.empty {
+  height: .8rem;
+}
+
+.active-nav {                       /*活动导航栏样式*/
+  background-color: #ffa600;
+}
+
+
+.box {                              /*公用模块样式*/
+  background-color: white;
+  border: 1px solid #898989;
+  border-radius: .1rem;
+  padding: 1px;
+  text-align: center;
+  margin-bottom: .12rem;
+  overflow: hidden;
+}
+
+.btn-private {                      /*公用按钮样式*/
+  display: inline-block;
+  width: 1.65rem;
+  height: .65rem;
+  font-weight: bold;
+  font-size: .28rem;
+  background-color: #ffa600;
+  line-height: .65rem;
+  border-radius: .2rem;
+  text-align: center;
+}
+th {                                /*表头公共样式*/
+  text-align: center;
+  background-color: #ffa600;
+}
+.container {
+  height: 100%;
+}
+.trans {                            /*过渡动画设置*/
+  transition: 1s all;
+}
+
+.span-6 {
+  width: 49%;
+  float: left;
+}
+
+/*对不同表格显示数据长度进行限制*/
+
+.myuser-td {
+  max-width: .28rem;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.myagent-td {
+  max-width: .36rem;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.myprofit-td {
+  max-width: .49rem;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.profit-td,.ward-td {
+  max-width: 1.5rem;
+}
+
+/*通用导航栏样式*/
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: .95rem;
+  background-color: #d6d6d6;
+
+  &>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: .95rem;
+
+    li{
+      width: 1.3rem;
+      background-color: #c7c7c7;
+      border-radius: .2rem;
+      padding-top: .04rem;
+      height: .95rem;
+      font-size: .22rem;
+
+      img{
+        height: .6rem;
+      }
+    }
+  }
+}
+
+/*主页样式表*/
+.index-earn {
+  color: #ffa600;
+  position: relative;
+  top: -1rem;
+  opacity: 0;
+  height: 10.6%;
+
+  &>div:first-child{
+    border-right: 1px #c7c7c7 solid;
+  }
+
+  h2{
+    font-size: .28rem;
+    font-weight: normal;
+    margin: .2rem 0 .15rem 0;
+  }
+
+  p{
+    font-size: .34rem;
+  }
+}
+
+
+.index-data {
+  color: #595757;
+  font-size: .26rem;
+  height: 15.412%;
+
+  &>div{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  >div:nth-child(2n-1){
+    border-right: $border;
+  }
+  >div:nth-child(1){
+    border-bottom: $border;
+  }
+  >div:nth-child(2){
+    border-bottom: $border;
+  }
+
+  strong{
+    font-weight: normal;
+  }
+}
+
+
+.index-nav {
+  height: .8rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: .12rem;
+
+  a{
+    width: 2.4rem;
+    height: .8rem;
+    font-size: .32rem;
+    line-height: .8rem;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  a:not(:last-child){
+    margin-right: .13rem;
+  }
+}
+
+.index-data, .index-nav {
+  opacity: 0;
+}
+
+.index-show {
+  color: #595757;
+  font-size: .26rem;
+  min-height: 54.809%;
+  max-height: 54.809%;
+  overflow: scroll;
+  position: relative;
+  top: 1.5rem;
+  opacity: 0;
+
+  h1{
+    font-size: .36rem;
+    display: inline-block;
+    width: 100%;
+    background-color: #c7c7c7;
+    height: .6rem;
+    line-height: .6rem;
+    margin-bottom: 0;
+    margin-top: .2rem;
+  }
+}
+
+/*奖品管理页面样式表*/
+.ward-head {
+  height: 10.347%;
+  color: black;
+  font-size: .3rem;
+  position: relative;
+  top: -1rem;
+  opacity: 0;
+
+  &>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  strong{
+    font-weight: normal;
+  }
+
+  span{
+    width: 1rem;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+}
+
+.ward-earned {
+  height: 29.021%;
+  font-size: .3rem;
+  overflow: scroll;
+  text-align: center;
+  background-color: white;
+  opacity: 0;
+}
+.ward-earned::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.ward-earned::-webkit-scrollbar:vertical {
+  width: .12rem;
+}
+.ward-earned::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: .1rem;
+  border: .02rem solid #ffffff;
+}
+.ward-earned::-webkit-scrollbar-track {
+  border-radius: .1rem;
+  background-color: #ffffff;
+}
+
+.ward-detail {
+  min-height: 50.409%;
+  max-height: 50.409%;
+  font-size: .3rem;
+  position: relative;
+  top: 1.5rem;
+  opacity: 0;
+
+  caption{
+    padding-left: .3rem;
+    color: #000;
+  }
+}
+

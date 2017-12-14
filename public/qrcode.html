@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>幸运娃娃机 客户后台</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <script src="js/auto-size.js"></script>
+    <link rel="stylesheet" href="css/global.css"/>
+</head>
+<body>
+
+<div class="code-content box">
+    <h1>我的二维码</h1>
+    <img style="width: 4rem;height: 4rem;" src="http://pan.baidu.com/share/qrcode?w=300&h=300&url=http://www.baidu.com" alt=""/>
+    <div>
+        <p>保存二维码到手机相册</p>
+        <p>制作，打印可用作推广素材</p>
+    </div>
+    <button class="btn-private">保存到手机相册</button>
+
+</div>
+
+<script src="js/tools-gp.js"></script>
+<script>
+    window.onload = function () {
+        pullDownRefresh()
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+    <script src="js/auto-size.js"></script>
+    <link rel="stylesheet" href="css/global.css"/>
+</head>
+<body>
+<div class="container">
+    <div id="user-head" class="user-head trans box row">
+        <div class="col-xs-4">
+            <img src="img/head_non.png" alt=""/>
+            <a class="btn-private code" href="">我的二维码</a>
+        </div>
+        <div class="rgt-head col-xs-8">
+            <div class="ipt-box row">
+                <label class="control-label">昵称</label>
+                <div class="content">
+                    <input type="text" disabled class="form-control" value="undefined">
+                </div>
+            </div>
+            <div class="ipt-box row">
+                <label class="control-label">手机号</label>
+                <div class="content">
+                    <input type="text" disabled class="form-control" value="undefined">
+                </div>
+            </div>
+            <div class="ipt-box row">
+                <label class="control-label">加入时间</label>
+                <div class="content">
+                    <input type="text" disabled class="form-control" value="undefined">
+                </div>
+            </div>
+            <div class="ipt-box row">
+                <label class="control-label">推广好友</label>
+                <div class="content">
+                    <a id="share" class="btn-private" href="javascript:;">分享</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="user-advertise" class="user-advertise trans box row">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div id="user-detail" class="user-detail trans box row">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseOne">
+                            公告1
+                        </a>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseTwo">
+                            公告2
+                        </a>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseThree">
+                            公告3
+                        </a>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="empty"></div>
+    <footer>
+        <ul>
+            <li><a href="index.html"><img src="img/index.png" alt=""/><p>首页</p></a></li>
+            <li><a href="ward.html"><img src="img/ward.png" alt=""/><p>奖品管理</p></a></li>
+            <li><a href="profit.html"><img src="img/earn.png" alt=""/><p>营收</p></a></li>
+            <li class="active-nav"><a href="javascript:;"><img src="img/my.png" alt=""/><p>我的</p></a></li>
+        </ul>
+
+    </footer>
+</div>
+
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script src="js/tools-gp.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>

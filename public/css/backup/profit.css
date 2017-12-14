@@ -1,0 +1,38 @@
+.head {
+    font-size: .28rem;
+    height: 1.25rem;
+}
+.head>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+.head>div:nth-child(2){
+    visibility: hidden;
+}
+
+.earned {
+    max-height: 3.5rem;
+    min-height: 3.5rem;
+    font-size: .3rem;
+    overflow: scroll;
+    text-align: center;
+    background-color: white;
+}
+th {
+    text-align: center;
+}
+
+.detail {
+    overflow: scroll;
+    height: 7.15rem;
+}
+.detail h1 {
+    font-size: .36rem;
+    display: inline-block;
+    width: 100%;
+    background-color: #c7c7c7;
+    height: .6rem;
+    line-height: .6rem;
+}

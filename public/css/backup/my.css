@@ -1,0 +1,48 @@
+.head {
+    padding: .28rem;
+    height: 3.5rem;
+}
+.head img {
+    width: 1.99rem;
+    height: 1.99rem;
+}
+.control-label {
+    width: 30%;
+    font-size: .28rem;
+    font-weight: bolder;
+}
+.content {
+    display: inline-block;
+    width: 60%;
+}
+.content>input {
+    font-size: .28rem;
+}
+.ipt-box {
+    margin-bottom: .08rem;
+}
+.rgt-head {
+    margin-top: .1rem;
+}
+
+
+.advertise {
+    height: 2.65rem;
+}
+.detail {
+    padding: .25rem .08rem;
+    height: 5.75rem;
+    font-size: .28rem;
+}
+.detail .panel-default {
+    border-radius: .2rem .2rem 0 0;
+}
+.detail .panel-heading {
+    background-color: #ffa600;
+}
+.panel-title>a {
+    font-size: .28rem;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+}
